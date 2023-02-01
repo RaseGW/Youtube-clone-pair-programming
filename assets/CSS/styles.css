@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9ecef;
+}
+
+h3 {
+  background: #1c1d1f;
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+ul {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  background: white;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #e9ecef;
+}
+
+ul a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+ul a:after {
+  content: "⇢";
+  position: absolute;
+  right: 10px;
+}
+
+ul a:hover {
+  background: #cdcbc4;
+}
