@@ -1,52 +1,141 @@
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+button {
+  background-color: #0f0f0f;
+  border: 0;
 }
 
-body {
-  background: #e9ecef;
+*:focus {
+  border: 0 solid #00000000;
 }
 
-h3 {
-  background: #1c1d1f;
-  color: white;
-  width: 80%;
-  text-align: center;
-  margin: 15px auto;
-  padding: 10px;
+header {
+  background-color: #0f0f0f;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-ul {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  list-style-type: none;
-  background: white;
+header > * {
+  display: flex;
+  align-items: center;
 }
 
-li {
-  height: 50px;
-  line-height: 50px;
-  border-top: 1px solid #e9ecef;
-}
-
-ul a {
-  display: block;
+img {
   height: 100%;
-  text-decoration: none;
-  color: black;
-  padding-left: 10px;
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  height: 21px;
+}
+.main-logo sup {
+  color: #aaa;
   position: relative;
-  transition: background 0.3s;
+  bottom: 10px;
+  left: 6px;
+  font-size: 10px;
 }
 
-ul a:after {
-  content: "⇢";
-  position: absolute;
-  right: 10px;
+header > * > * {
+  margin-left: 18px;
 }
 
-ul a:hover {
-  background: #cdcbc4;
+.button-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.112);
+}
+
+.self-profile {
+  border-radius: 50px;
+  overflow: hidden;
+  height: 33px;
+  margin-right: 36px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 78px;
+}
+
+.search-inputs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.search-field-container {
+  flex-grow: 1;
+  max-width: 540px;
+  background-color: #0f0f0f;
+  border-radius: 50px 0 0 50px;
+  border: solid #303030 thin;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.search-field {
+  flex-grow: 1;
+  background-color: #00000000;
+  border: #00000000;
+  color: #fff;
+  height: 26px;
+  width: 40px;
+}
+
+.search-button {
+  height: 42px;
+  border-radius: 0 50px 50px 0;
+  border: solid rgb(45, 45, 45) thin;
+  border-left: none;
+  background-color: #282828;
+  padding: 8px;
+  padding-left: 21px;
+  padding-right: 20px;
+}
+
+.search-microphone {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #191919;
+  margin-left: 9px;
+}
+.search-microphone:hover {
+  background-color: rgba(255, 255, 255, 0.112);
+}
+
+.focus-field {
+  display: none;
+  height: 20px;
+}
+.search-field:hover .focus-field {
+  display: block;
 }
