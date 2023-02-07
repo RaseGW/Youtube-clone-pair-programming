@@ -11,7 +11,7 @@
   <header>
     <div class="header-home">
       <div class="button-container">
-        <button class="header-button" type="button">
+        <button class="circle-button" type="button">
           <img
             src="./assets/images/icons/settings.svg"
             alt="show and hide aside button"
@@ -47,7 +47,7 @@
     <nav class="user-access">
       <div class="table-header-search">
         <div class="button-container">
-          <button class="header-button">
+          <button class="circle-button">
             <img
               src="./assets/images/icons/search.svg"
               alt="show search input"
@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="button-container">
-        <button class="header-button" type="button">
+        <button class="circle-button" type="button">
           <img
             src="./assets/images/icons/upload-video.svg"
             alt="upload a video button"
@@ -74,7 +74,7 @@
         </button>
       </div>
       <div class="button-container">
-        <button class="header-button" type="button">
+        <button class="circle-button" type="button">
           <img
             src="./assets/images/icons/bell.svg"
             alt="notifications button"
@@ -251,7 +251,26 @@
     </div>
     <body>
       <div class="recommended-content">
-        <nav>
+        <nav class="recommended-themes">
+          <div class="scroll-button-bg">
+            <div class="scroll-gradient-bg">
+              <svg height="100%" width="100%">
+                <defs>
+                  <linearGradient id="0" x1="0" y1="0.5" x2="1" y2="0.5">
+                    <stop offset="0%" stop-color="#0f0f0f00"/>
+                    <stop offset="100%" stop-color="#0f0f0f"/>
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#0)" height="100%" width="100%"/>
+                <rect fill="url(#1)" height="100%" width="100%"/>
+              </svg>
+            </div>
+            <div class="button-container scroll-button">
+              <button class="circle-button">
+                <img src="./assets/images/icons/arrow-right.svg" alt="scroll recommended themes">
+              </button>
+            </div>
+          </div>
           <div class="bagged">
             <button class="bagged-button" type="button">Todos</button>
             <button class="bagged-button" type="button">Mixes</button>

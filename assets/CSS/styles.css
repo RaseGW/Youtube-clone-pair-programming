@@ -2,7 +2,7 @@
   color: #fff;
 }
 
-*:not(img) {
+*:not(img, .recommended-content *) {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -64,7 +64,7 @@ img {
   align-items: center;
 }
 
-.header-button {
+.circle-button {
   width: 40px;
   height: 40px;
   border-radius: 100px;
@@ -72,7 +72,7 @@ img {
   cursor: pointer;
 }
 
-.header-button:hover {
+.circle-button:hover {
   background-color: rgba(255, 255, 255, 0.112);
 }
 
@@ -199,6 +199,10 @@ aside {
   margin: 0 24px;
 }
 
+.recommended-themes {
+  position: relative;
+}
+
 .bagged {
   width: 100%;
   overflow-x: scroll;
@@ -213,8 +217,9 @@ aside {
 .bagged-button {
   background-color: #303030;
   margin: 12px;
+  margin-left: 0;
+  padding: 9px 12px;
   border-radius: 8px;
-  padding: 0 12px;
   transition: background;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
@@ -226,6 +231,29 @@ aside {
 
 .bagged-button:first-child {
   margin-left: 0;
+}
+
+.recommended-themes .button-container {
+  display: flex;
+  justify-content: center;
+  width: 56px;
+}
+
+.scroll-button-bg {
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.scroll-gradient-bg {
+  width: 50px;
+}
+
+.scroll-button {
+  height: 100%;
+  z-index: 10;
+  background-color: #0f0f0f;
 }
 
 .recommended-videos {
