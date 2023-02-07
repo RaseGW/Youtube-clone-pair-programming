@@ -13,6 +13,7 @@
 button {
   background-color: #0f0f0f;
   border: 0;
+  cursor: pointer;
 }
 
 header {
@@ -169,7 +170,7 @@ img {
 
 aside {
   position: fixed;
-  height: 100vh;
+  height: 770px;
   overflow-y: scroll;
   width: 210px;
   padding: 12px;
@@ -237,6 +238,18 @@ aside {
   font-size: 13px;
 }
 
+.video-info-container {
+  display: flex;
+  height: 100px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* video  title  */
+
 .video-title {
   color: #fff;
   font-size: 16px;
@@ -248,23 +261,15 @@ aside {
   max-height: 34px;
 }
 
-.video-title ~ * {
-  margin-top: 4px;
-}
-
 .video-title::after {
   content: "…";
 }
 
-.video-info-container {
-  display: flex;
-  height: 100px;
+.video-title ~ * {
+  margin-top: 4px;
 }
 
-.video-info {
-  display: flex;
-  flex-direction: column;
-}
+/* author profile */
 
 .author {
   height: 39px;
@@ -276,6 +281,8 @@ aside {
   border-radius: 50px;
 }
 
+/* views & data */
+
 .views-date {
   display: flex;
   flex-wrap: wrap;
@@ -285,4 +292,76 @@ aside {
 .views-date time::before {
   content: "•";
   margin: 0 4px;
+}
+
+/* medias components*/
+
+.table-header-search {
+  gap: 4px;
+}
+
+/* media desktop not show */
+
+.table-header-search {
+  display: none;
+}
+
+.table-aside {
+  display: none;
+}
+
+/* header media */
+
+@media (max-width: 718px) {
+  header > * > * {
+    margin-left: 4px;
+  }
+
+  .search-microphone {
+    margin: 0;
+  }
+
+  .frame-button {
+    margin-left: 9px;
+    background-color: #191919;
+  }
+
+  .header-home .button-container {
+    margin-left: 11px;
+    margin-right: 16px;
+  }
+
+  .self-profile {
+    margin: 0 24px;
+    margin-left: 15px;
+  }
+
+  .desktop-header-search {
+    display: none;
+  }
+
+  .table-header-search {
+    display: flex;
+  }
+}
+
+/* aside media */
+
+@media (max-width: 1313px) {
+  .padding {
+    width: 68px;
+  }
+
+  aside {
+    width: 64px;
+    padding: 0 4px;
+  }
+
+  .desktop-aside {
+    display: none;
+  }
+
+  .table-aside {
+    display: block;
+  }
 }
