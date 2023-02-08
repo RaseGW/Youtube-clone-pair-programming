@@ -1,6 +1,6 @@
 name: Linters
 
-on: pull-request
+on: pull_request
 
 env:
   FORCE-COLOR: 1
