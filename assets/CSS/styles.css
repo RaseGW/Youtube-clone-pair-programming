@@ -2,7 +2,7 @@
   color: #fff;
 }
 
-*:not(img, .recommended-content *) {
+*:not(img) {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -76,6 +76,10 @@ img {
   background-color: rgba(255, 255, 255, 0.112);
 }
 
+.circle-button:active {
+  background-color: rgba(255, 255, 255, 0.321);
+}
+
 .self-profile {
   border-radius: 50px;
   overflow: hidden;
@@ -140,6 +144,10 @@ img {
   margin-left: 9px;
 }
 
+.search-microphone:active {
+  background-color: rgba(255, 255, 255, 0.321);
+}
+
 .search-microphone:hover {
   background-color: rgba(255, 255, 255, 0.112);
 }
@@ -201,6 +209,7 @@ aside {
 
 .recommended-themes {
   position: relative;
+  overflow-y: hidden;
 }
 
 .bagged {
@@ -244,6 +253,7 @@ aside {
   position: absolute;
   right: 0;
   height: 100%;
+  box-shadow: 30px 10px 50px 108px #0f0f0f;
 }
 
 .scroll-gradient-bg {
@@ -337,23 +347,14 @@ aside {
   margin: 0 4px;
 }
 
-/* medias components*/
-
-.table-header-search {
-  gap: 4px;
-}
-
-/* media desktop not show */
-
 .table-header-search {
   display: none;
+  gap: 4px;
 }
 
 .table-aside {
   display: none;
 }
-
-/* header media */
 
 @media (max-width: 718px) {
   header > * > * {
@@ -387,8 +388,6 @@ aside {
     display: flex;
   }
 }
-
-/* aside media */
 
 @media (max-width: 1313px) {
   .padding {
