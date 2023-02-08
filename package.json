@@ -8,7 +8,7 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
-  "name": "youtube-clone",
+  "name": "youtube_clone",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
