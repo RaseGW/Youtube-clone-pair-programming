@@ -76,6 +76,10 @@ img {
   background-color: rgba(255, 255, 255, 0.112);
 }
 
+.aside-button:hover {
+  background-color: rgba(255, 255, 255, 0.112);
+}
+
 .self-profile {
   border-radius: 50px;
   overflow: hidden;
@@ -337,16 +341,13 @@ aside {
   margin: 0 4px;
 }
 
-/* medias components*/
-
-.table-header-search {
-  gap: 4px;
-}
+/* medias components */
 
 /* media desktop not show */
 
 .table-header-search {
   display: none;
+  gap: 4px;
 }
 
 .table-aside {
@@ -355,7 +356,7 @@ aside {
 
 /* header media */
 
-@media (max-width: 718px) {
+@media (max-width: 400px) {
   header > * > * {
     margin-left: 4px;
   }
@@ -390,13 +391,13 @@ aside {
 
 /* aside media */
 
-@media (max-width: 1313px) {
+@media (max-width: 600px) {
   .padding {
     width: 68px;
   }
 
   aside {
-    width: 64px;
+    width: 6rem;
     padding: 0 4px;
   }
 
@@ -406,5 +407,16 @@ aside {
 
   .table-aside {
     display: block;
+  }
+
+  .aside-button {
+    padding: 0.7rem;
+    margin: 0.1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: xx-small;
   }
 }
