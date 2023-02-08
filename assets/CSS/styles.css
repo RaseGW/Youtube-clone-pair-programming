@@ -179,30 +179,72 @@ img {
 
 aside {
   position: fixed;
-  height: 770px;
+  height: 801px;
   overflow-y: scroll;
   width: 210px;
   padding: 12px;
   flex-shrink: 0;
+  padding-right: 19px;
+}
+
+hr {
+  margin: 11px 0;
+  border: none;
+  border-top: thin solid #282828;
 }
 
 .side-bar-button > img {
   vertical-align: middle;
+  margin-right: 1rem;
+  height: 1.5rem;
 }
 
 .side-bar-button {
-  padding: 0.4rem;
-  height: 2.2rem;
-  width: 12rem;
+  padding: 0.5rem 0.34rem;
+  padding-left: 0.813rem;
+  width: 100%;
   white-space: nowrap;
   border-radius: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-align: initial;
   font-weight: 500;
 }
 
 .side-bar-button:hover {
   background-color: rgba(255, 255, 255, 0.112);
+}
+
+.aside-suscriptions img {
+  border-radius: 50px;
+}
+
+aside h2 {
+  font-size: initial;
+  font-weight: 500;
+  padding: 10px 12px;
+}
+
+.aside-info-copyright p {
+  padding: 0.5rem 0.34rem 0;
+  padding-left: 0.813rem;
+  width: 200px;
+}
+
+.aside-info-copyright a {
+  margin-right: 0.5rem;
+  font-size: small;
+  font-weight: 600;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.copyright {
+  padding: 24px 12px;
+}
+
+.copyright small {
+  font-size: 0.75rem;
+  color: #717171;
 }
 
 .recommended-content {
@@ -366,7 +408,7 @@ aside {
 
 /* header media */
 
-@media (max-width: 400px) {
+@media (max-width: 718px) {
   header > * > * {
     margin-left: 4px;
   }
@@ -401,13 +443,13 @@ aside {
 
 /* aside media */
 
-@media (max-width: 700px) {
+@media (max-width: 1313px) {
   .padding {
-    width: 68px;
+    width: 4rem;
   }
 
   aside {
-    width: 6rem;
+    width: 4rem;
     padding: 0 4px;
   }
 
@@ -422,7 +464,7 @@ aside {
   .aside-button {
     margin: 0.1rem;
     height: 4.6rem;
-    width: 4.3rem;
+    width: 4rem;
     border-radius: 0.5rem;
     text-align: center;
     font-size: x-small;
@@ -433,5 +475,19 @@ aside {
     width: 25px;
     height: 25px;
     margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 792px) {
+  aside {
+    display: none;
+  }
+
+  .padding {
+    display: none;
+  }
+
+  .layout {
+    justify-content: center;
   }
 }
