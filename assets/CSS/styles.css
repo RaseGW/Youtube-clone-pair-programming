@@ -341,16 +341,13 @@ aside {
   margin: 0 4px;
 }
 
-/* medias components*/
-
-.table-header-search {
-  gap: 4px;
-}
+/* medias components */
 
 /* media desktop not show */
 
 .table-header-search {
   display: none;
+  gap: 4px;
 }
 
 .table-aside {
