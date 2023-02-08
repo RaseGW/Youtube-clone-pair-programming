@@ -2,7 +2,7 @@
   color: #fff;
 }
 
-*:not(img, .recommended-content *) {
+*:not(img) {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -76,6 +76,10 @@ img {
   background-color: rgba(255, 255, 255, 0.112);
 }
 
+.circle-button:active {
+  background-color: rgba(255, 255, 255, 0.321);
+}
+
 .aside-button:hover {
   background-color: rgba(255, 255, 255, 0.112);
 }
@@ -144,6 +148,10 @@ img {
   margin-left: 9px;
 }
 
+.search-microphone:active {
+  background-color: rgba(255, 255, 255, 0.321);
+}
+
 .search-microphone:hover {
   background-color: rgba(255, 255, 255, 0.112);
 }
@@ -205,6 +213,7 @@ aside {
 
 .recommended-themes {
   position: relative;
+  overflow-y: hidden;
 }
 
 .bagged {
@@ -248,6 +257,7 @@ aside {
   position: absolute;
   right: 0;
   height: 100%;
+  box-shadow: 30px 10px 50px 108px #0f0f0f;
 }
 
 .scroll-gradient-bg {
