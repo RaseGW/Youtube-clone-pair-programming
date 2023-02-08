@@ -401,7 +401,7 @@ aside {
 
 /* aside media */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .padding {
     width: 68px;
   }
@@ -420,13 +420,18 @@ aside {
   }
 
   .aside-button {
-    padding: 0.7rem;
     margin: 0.1rem;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4.6rem;
+    width: 4.3rem;
     border-radius: 0.5rem;
     text-align: center;
-    vertical-align: middle;
-    font-size: xx-small;
+    font-size: x-small;
+    white-space: pre-line;
+  }
+
+  .aside-button > img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0.3rem;
   }
 }
