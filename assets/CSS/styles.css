@@ -165,10 +165,18 @@ img {
   display: block;
 }
 
+.layout-frame {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 58px 1fr;
+  height: 100vh;
+}
+
 .layout {
   display: flex;
-  position: relative;
-  top: 58px;
+  grid-row: 2;
+  height: 100%;
+  width: 100vw;
 }
 
 .padding {
@@ -179,12 +187,17 @@ img {
 
 aside {
   position: fixed;
-  height: 801px;
+  top: 0;
+  height: 100%;
   overflow-y: scroll;
   width: 210px;
   padding: 12px;
   flex-shrink: 0;
   padding-right: 19px;
+}
+
+.aside-padding {
+  height: 58px;
 }
 
 hr {
